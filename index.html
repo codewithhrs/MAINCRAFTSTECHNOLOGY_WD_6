@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🛒 Product Store</h1>
+</header>
+
+<!-- ADMIN FORM -->
+<section class="form-section">
+<h2>Add Product</h2>
+<input type="text" id="title" placeholder="Title">
+<input type="number" id="price" placeholder="Price">
+<input type="text" id="image" placeholder="Image URL">
+<button id="addBtn">Add Product</button>
+</section>
+
+<!-- LOADING -->
+<div id="loader" class="loader hidden">Loading products...</div>
+
+<!-- ERROR -->
+<div id="error" class="error hidden"></div>
+
+<!-- PRODUCT GRID -->
+<section id="products" class="grid"></section>
+
+<script src="api.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
